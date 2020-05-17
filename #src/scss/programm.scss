@@ -1,0 +1,49 @@
+.programm{
+    position: relative;
+    z-index: 5;
+    padding-top: 82px;
+    padding-bottom: 82px;
+    min-height: 800px;
+    background-color: #20203a;
+    text-align: center;
+}
+.programm-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.programm-list{
+    padding-top: 60px;
+    max-width: 552px;
+    color: $white;
+    font-family: "MullerRegular";
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+}
+@media (max-width: 1180px){
+    .programm-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .programm-list{
+        max-width: 900px;
+    }
+}
+
+.programm-aside{
+    background-color: #f4f4f4;
+    background-image: linear-gradient(-72deg, $first-gradient 0%, $last-gradient 100%);
+    text-align: center;
+    padding: 80px 0;
+}
+.aside-title{
+    color: $white;
+    font-family: "PlayfairDisplay-italic";
+    font-size: 36px;
+}
+.aside-author{
+    padding-top: 25px;
+    color: $white;
+    font-family: "MullerBold";
+    font-size: 20px;
+}

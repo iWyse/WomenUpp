@@ -1,0 +1,36 @@
+.promote{
+    height: auto;
+    text-align: center;
+    padding-top: 108px;
+    padding-bottom: 108px;
+    background: url("../img/promote/black.webp") center no-repeat;
+    background-size: cover;
+}
+.promote-wrapper{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.promote-item__number{
+    color: $white;
+    font-family: "MullerBold";
+    font-size: 36px;
+}
+.promote-item__name{
+    padding-top: 5px;
+    color: $white;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+@media (max-width: 580px){
+    .promote-wrapper{
+        padding-top: 40px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .promote-item{
+        padding-top: 40px;
+    }
+}

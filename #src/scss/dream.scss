@@ -1,0 +1,42 @@
+.dream{
+    padding-top: 115px;
+    padding-bottom: 120px;
+}
+.dream-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.dream-photo{
+    position: relative;
+    z-index: 6;
+}
+.dream-photo__person{
+    max-width: 100%;
+    height: auto;
+}
+.dream-project{
+    text-align: center;
+    max-width: 469px;
+}
+.dream-desc{
+    padding: 36px 0;
+    color: $dark;
+    font-family: "PlayfairDisplay-italic";
+    font-size: 20px;
+}
+.dream-author{
+    color: $dark;
+    font-family: "MullerBold";
+    font-size: 18px;
+}
+
+@media (max-width: 973px){
+    .dream-wrapper{
+        justify-content: center;
+    }
+    .dream-project{
+        padding-top: 30px;
+    }
+}

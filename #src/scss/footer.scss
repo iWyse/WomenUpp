@@ -1,0 +1,31 @@
+.footer{
+    padding: 55px 0;
+    background-color: $dark;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-item{
+    padding: 20px;
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+}
+.footer-item__title{
+    font-family: "MullerRegular";
+    padding-bottom: 30px;
+}
+.footer-item__name,
+.footer-item__phone,
+.footer-item__email{
+    padding-top: 5px;
+    font-family: "MullerBold";
+}
+
+@media (max-width: 1069px){
+    .footer-wrapper{
+        justify-content: space-around;
+    }
+}

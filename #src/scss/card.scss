@@ -1,0 +1,109 @@
+.card{
+    min-height: 800px;
+    padding-top: 80px;
+    text-align: center;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 51px;
+}
+.card-item{
+    transition: 1s;
+    position: relative;
+    margin: 2px;
+    padding-bottom: 51px;
+    max-width: 281px;
+    min-height: 500px;
+    border-radius: 6px;
+}
+.card-item:hover{
+    cursor: pointer;
+    box-shadow: -18px 32px 76px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: #f9593a;
+    background-image: linear-gradient(-43deg, $first-gradient 0%, $last-gradient 100%);
+    
+}
+.card-item:hover .card-item__type,
+.card-item:hover .card-item__oldprice,
+.card-item:hover .card-item__newprice,
+.card-item:hover .card-item__info{
+    color: $white;
+}
+.card-item__type{
+    padding-top: 46px;
+    padding-bottom: 26px;
+    color: $grey;
+    font-family: "MullerExtraBold";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+}
+.card-item__oldprice{
+    color: $grey;
+    font-family: "MullerRegular";
+    font-size: 40px;
+    text-decoration: line-through;
+}
+.card-item__newprice{
+    color: $grey;
+    font-family: "MullerBold";
+    font-size: 50px;
+}
+.card-item__info{
+    margin: 10px;
+    max-width: 262px;
+    padding-top: 28px;
+    line-height: 25px;
+    color: #7b7e82;
+    font-family: "MullerRegular";
+    font-size: 14px;
+}
+.button__submit{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    box-shadow: -18px 32px 76px rgba(0, 0, 0, 0.3);
+    border-radius: 23px;
+    background-color: $white;
+    background-image: linear-gradient(to top, $first-gradient 0%, $last-gradient 100%);
+    border: none;
+    outline: none;
+    padding: 20px 65px;
+    color: #fafafa;
+    font-family: "MullerBold";
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.card-item:hover .button__submit{
+    background-color: $white;
+    color: $dark;
+    background-image: none;
+    transform: scale(1.11);
+    transition: ease-in-out .9s;
+    &:active{
+        box-shadow: 0 0 5em .5em $shadow-purple;
+        transform: translateY(5px);
+        transition: none;
+    }
+}
+@media (max-width: 1186px){
+    .card-wrapper{
+        justify-content: space-around;
+    }
+    .card-item{
+        box-shadow: -18px 32px 76px rgba(0, 0, 0, 0.3);
+        margin: 50px;
+    }
+}
+@media (max-width: 616px){
+    .card-item{
+        min-height: 470px;
+    }
+    .button__submit{
+        padding: 15px 40px;
+        left: 57px;
+    }
+}

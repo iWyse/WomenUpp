@@ -1,0 +1,49 @@
+.mobile{
+    min-height: 500px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.mobile-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mobile-app__info{
+    padding-top: 18px;
+    color: $dark;
+    font-family: "MullerRegular";
+    font-size: 24px;
+}
+
+.mobile-items__link{
+    position: relative;
+    padding-top: 30px;
+    padding-left: 43px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: $dark;
+    font-family: "MullerRegular";
+    font-size: 16px;
+    &:before{
+        content: "";
+        background: url("../img/mobile/checked.webp") center no-repeat;
+        position: absolute;
+        display: block;
+        top: -110px;
+        left: -180px;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1108px){
+    .mobile-wrapper{
+        justify-content: center;
+    }
+    .mobile-app{
+        padding-top: 80px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,75 @@
+.gallery{
+    min-height: 1321px;
+    background-color: #fef0ff;
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.gallery-content{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    grid-template-rows: repeat(4, 285px);
+    justify-content: center;
+}
+
+.gallery-item{
+    position: relative;
+    z-index: 1;
+    &:hover{
+        cursor: pointer;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 265px;
+            height: 268px;
+            box-shadow: -18px 32px 76px rgba(0, 0, 0, 0.3);
+            background-color: $dark;
+            background-image: linear-gradient(to top, $first-gradient 0%, $last-gradient 100%);
+            opacity: 0.89;
+            z-index: 10;
+        }
+    }
+}
+.gallery-item:hover .gallery-desc{
+    z-index: 50;
+}
+.gallery-desc{
+    position: absolute;
+    z-index: -5;
+   
+}
+.gallery-desc__name{
+    color: $white;
+    font-family: "MullerBold";
+    font-size: 24px;
+    padding-top: 38px;
+    padding-left: 25px;
+    max-width: 130px;
+    text-align: left;
+}
+.gallery-desc__about{
+    color: $white;
+    font-family: "MullerRegular";
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: left;
+    max-width: 190px;
+    line-height: 20px;
+}
+@media (max-width: 1140px){
+    .gallery-content{
+        grid-template-columns: repeat(2, 285px);
+        grid-template-rows: repeat(8, 285px);
+        }
+    }
+@media (max-width: 595px){
+        .gallery-content{
+            grid-template-columns: repeat(1, 285px);
+            grid-template-rows: repeat(16, 285px);
+            }
+        }

@@ -1,0 +1,38 @@
+.callback{
+    padding-top: 137px;
+    background-color: #fef0ff;
+    padding-bottom: 100px;
+}
+.callback-wrapper{
+    text-align: center;
+}
+.callbacl-question{
+    @extend .section-title;
+    padding-bottom: 10px;
+}
+.form-callback{
+   padding-top: 60px;
+}
+.callback-button__submit{
+    box-shadow: -18px 32px 76px rgba(0, 0, 0, 0.3);
+    border-radius: 28px;
+    background-color: $white;
+    background-image: linear-gradient(to top, $first-gradient 0%, $last-gradient 100%);
+    border: none;
+    outline: none;
+    color: $white;
+    font-family: "MullerBold";
+    font-size: 16px;
+    padding: 23px 95px;
+    &:hover{
+        transform: scale(1.1001);
+        font-size: 16px;
+        transition: ease-in-out .3s;
+    }
+    &:active{
+        box-shadow: 0 0 5em .5em $shadow-purple;
+        font-size: 17px;
+        transition: none;
+    }
+
+}

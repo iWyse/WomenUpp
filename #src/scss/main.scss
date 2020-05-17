@@ -1,0 +1,36 @@
+@import "style.scss";
+@import "normalize.scss";
+@import "vars.scss";
+@import "figures.scss";
+@import "header.scss";
+@import "caption.scss";
+@import "about.scss";
+@import "gallery.scss";
+@import "dream.scss";
+@import "programm.scss";
+@import "card.scss";
+@import "mobile.scss";
+@import "skills.scss";
+@import "callback.scss";
+@import "promote.scss";
+@import "area.scss";
+@import "partners.scss";
+@import "footer.scss";
+
+
+
+html,body {
+    height: 100vh;
+    scroll-behavior: smooth;
+ }
+body{
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+

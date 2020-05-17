@@ -1,0 +1,25 @@
+.partners{
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    text-align: center;
+}
+.partners-wrapper{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partners-item{
+   padding: 10px;
+}
+
+@media (max-width: 844px){
+    .partners-wrapper{
+        justify-content: center;
+    }
+    .partners-item{
+        padding: 40px;
+     }
+}

@@ -1,0 +1,21 @@
+$shadow-purple: rgba(50,50,150,0.9);
+$shadow-darkpurple: rgba(50,50,150,0.1);
+$white: #fff;
+$dark: #000;
+$grey: #212121;
+$first-gradient:#7f12ab;
+$last-gradient: #da16c9;
+//VARS
+
+//EXTENDS
+.shadow-purple{
+    box-shadow: 0 0 5em .5em rgba(50,50,150,0.9);
+}
+.section-title{
+    color: #000;
+    font-family: "MullerBold";
+    font-size: 36px;
+}
+.white{
+    color: #fff;
+}

@@ -1,0 +1,347 @@
+// section.header
+.figures-vector{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 910px;
+    animation: opacity 1s alternate ease-in-out;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.figures-polygon{
+    position: absolute;
+    width: 670px;
+    height: 365px;
+    top: 330px;
+    right: 40px;
+    animation: for-polygon 3s ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+.figures-rectangle1{
+    position: absolute;
+    background: url("../img/header/Rectangle.webp")center no-repeat;
+    z-index: 11;
+    width: 400px;
+    height: 150px;
+    transform: rotate(-60deg);
+    top: 50px;
+    left: -250px;
+    animation: rectangle1 2.5s ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+.figures-rectangle2{
+    position: absolute;
+    background: url("../img/header/Rectangle.webp")center no-repeat;
+    z-index: 11;
+    width: 400px;
+    height: 150px;
+    transform: rotate(-90deg);
+    top: 250px;
+    left: -300px;
+    animation: rectangle2 2s ease-in-out;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes for-polygon{
+    from{
+       transform: translateX(755px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes opacity{
+    from{
+       opacity: 0.3;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+
+@keyframes rectangle1{
+    from{
+        box-shadow: 0 0 5em .5em $shadow-purple;
+        left: -400px;
+     }
+     to{
+        box-shadow: 0 0 5em .5em $shadow-darkpurple;
+        left: -250px;
+
+     }
+}
+@keyframes rectangle2{
+    from{
+        transform:  rotate(-90deg);
+        box-shadow: 0 0 5em .5em $shadow-purple;
+     }
+     to{
+         transform:  rotate(-60deg);
+         box-shadow: 0 0 5em .5em $shadow-darkpurple;
+     }
+}
+
+@media (max-width: 1280px){
+    .figures-rectangle1,
+    .figures-rectangle2,
+    .figures-polygon{
+        display: none;
+    }
+}
+
+
+// section.header
+
+// section.about
+.figures-rectangle3{
+    position: absolute;
+    background: url("../img/header/Rectangle.webp")center no-repeat;
+    z-index: 11;
+    width: 470px;
+    height: 220px;
+    transform: rotate(-60deg);
+    top: 100px;
+    right: -250px;
+    animation: rectangle3 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes rectangle3{
+    from{
+        box-shadow: 0 0 5em .5em $shadow-purple;
+        right: -520px;
+        transform: rotate(-20deg);
+     }
+     to{
+        box-shadow: 0 0 5em .5em $shadow-darkpurple;
+        right: -250px;
+        transform: rotate(-60deg);
+     }
+}
+.figures-rectangle4{
+    position: absolute;
+    background: url("../img/header/Rectangle.webp")center no-repeat;
+    z-index: 11;
+    width: 600px;
+    height: 290px;
+    transform: rotate(120deg);
+    top: 350px;
+    right: -330px;
+    animation: rectangle4 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes rectangle4{
+    from{
+        box-shadow: 0 0 5em .5em $shadow-purple;
+        right: -670px;
+        transform: rotate(40deg);
+     }
+     to{
+        box-shadow: 0 0 5em .5em $shadow-darkpurple;
+        right: -330px;
+        transform: rotate(120deg);
+     }
+}
+
+.figures-vector2{
+    position: absolute;
+    display: block;
+    top: -100px;
+    left: 345px;
+    height: 600px;
+    width: 212px;
+    opacity: 0.3;
+    animation: opacity2 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes opacity2{
+    from{
+       opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.figures-polygon2{
+    position: absolute;
+    display: block;
+    top: 240px;
+    left: -250px;
+    width: 528px;
+    height: 351px;
+    animation: about-polygon 3s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes about-polygon{
+    from{
+       transform: translateX(-435px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 1680px){
+    .figures-polygon2{
+        display: none;
+    }
+}
+@media (max-width: 1320px){
+    .figures-rectangle3,
+    .figures-rectangle4{
+        display: none;
+    }
+}
+@media (max-width: 1032px){
+    .figures-vector2{
+        display: none;
+    }
+}
+// section.about
+
+// section.dream
+.figures-dream{
+    position: absolute;
+    top: 40px;
+    left: -200px;
+    transform: rotate(-38deg);
+    animation: dream 1s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes dream{
+    from{
+        transform: rotate(138deg);
+    }
+    to{
+        transform: rotate(-38deg);
+    }
+}
+@media (max-width: 1300px){
+    .figures-dream{
+        position: absolute;
+        top: -100px;
+        left: 280px;
+        transform: rotate(128deg);
+    }
+}
+@media (max-width: 645px){
+    .figures-dream{
+        display: none;
+    }
+}
+// section.dream
+
+// section.programm
+.figures-programm__right{
+    position: absolute;
+    top: 50px;
+    right: -45px;
+    z-index: -1;
+    animation: programm-right 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+.figures-programm__left{
+    position: absolute;
+    top: 400px;
+    left: -250px;
+    z-index: -1;
+    transform: rotate(180deg);
+    animation: programm-left 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+@keyframes programm-left{
+    from{
+       transform: translateX(-435px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes programm-right{
+    from{
+       transform: translateX(835px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 1650px){
+    .figures-programm__left,
+    .figures-programm__right{
+        display: none;
+    } 
+}
+
+// section.programm
+
+// section.area
+
+.figures-area{
+    position: absolute;
+    z-index: -1;
+    width: 670px;
+    height: 365px;
+    z-index: 11;
+    top: -80px;
+    left: -210px;
+    animation: figures-area 2s ease-in-out;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@keyframes figures-area{
+    from{
+       transform: translateX(-455px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 1070px){
+    .figures-area{
+        display: none;
+    }
+}
+// section.area
+
+// section.partners
+    .figures-part{
+        position: absolute;
+        z-index: -1;
+        width: 670px;
+        height: 365px;
+        z-index: 11;
+        top: 100px;
+        right: -190px;
+        animation: figures-part 2s ease-in-out;
+        -webkit-animation-fill-mode:both;
+        animation-fill-mode:both;
+    }
+    @keyframes figures-part{
+        from{
+           transform: translateX(485px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+@media (max-width: 1700px){
+    .figures-part{
+        display: none;
+    }
+}
+// section.partners
